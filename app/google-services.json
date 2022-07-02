@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1055995825582",
+    "project_id": "firestorelearn-1865a",
+    "storage_bucket": "firestorelearn-1865a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055995825582:android:f4e9694cf96249ae81cc3f",
+        "android_client_info": {
+          "package_name": "com.ngedev.firestorelearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055995825582-uqkph3oti9ubnbltlugbcmil63ukgmnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUgBbI6MJeBy8lhnJ_GOAnsa1YQdbHFLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055995825582-uqkph3oti9ubnbltlugbcmil63ukgmnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055995825582:android:3767129dca8f077b81cc3f",
+        "android_client_info": {
+          "package_name": "com.ngedev.thesisx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055995825582-uqkph3oti9ubnbltlugbcmil63ukgmnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUgBbI6MJeBy8lhnJ_GOAnsa1YQdbHFLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055995825582-uqkph3oti9ubnbltlugbcmil63ukgmnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

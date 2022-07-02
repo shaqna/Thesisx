@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/range_16">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layoutImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/rounded_image_book"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/imageBook"
+                android:layout_width="@dimen/range_32"
+                android:layout_height="@dimen/range_32"
+                android:contentDescription="@string/image_book_description"
+                app:srcCompat="@drawable/icon_kontrol"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBookTitle"
+            style="@style/InterSemiBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/range_16"
+            android:ellipsize="middle"
+            android:textSize="@dimen/size_16"
+            android:maxLines="1"
+            app:layout_constraintStart_toEndOf="@+id/layoutImage"
+            app:layout_constraintTop_toTopOf="@id/layoutImage"
+            tools:text="Perancangan dan Analisis Sistem..." />
+
+        <TextView
+            android:id="@+id/tvNameYear"
+            style="@style/InterMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ellipsize="end"
+            android:textSize="@dimen/size_16"
+            android:maxLines="1"
+            app:layout_constraintStart_toEndOf="@+id/layoutImage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="2021, Muhammad Manzil Karama" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/range_32"
+        android:layout_marginTop="@dimen/range_16"
+        android:background="@color/strokeColor"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</LinearLayout>

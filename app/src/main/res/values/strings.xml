@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Thesisx</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_settings">Pengaturan</string>
+    <string name="splashlogo">SplashLogo</string>
+    <string name="your_thesis_explore">Your <font color="#fc3159">Thesis</font>. Explore</string>
+    <string name="find_your_best_references">Find your best references</string>
+    <string name="masuk">Masuk</string>
+    <string name="welcome_image">Welcome Image</string>
+    <string name="daftar">Daftar</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="belum_punya_akun_daftar">Belum punya Akun? <font color="#fc3159">Daftar</font></string>
+    <string name="sudah_punya_akun_masuk">Sudah punya Akun? <font color="#fc3159">Masuk</font></string>
+    <string name="bidang">Bidang</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_book_description">Image Book Description</string>
+    <string name="username">Username</string>
+    <string name="detail">Detail</string>
+    <string name="nama_pengarang">Nama Pengarang</string>
+    <string name="tahun_terbit">Tahun Terbit</string>
+    <string name="judul">Judul</string>
+    <string name="abstrak">Abstrak</string>
+    <string name="isi_abstrak">
+        Komunikasi merupakan hal yang penting di zaman sekarang ini. Namun di pulau Sembilan, kecamatan Pangkalan Susu, jaringan komunikasi masih sangat minim. Salah satu solusi yang bisa dimanfaatkan adalah merancang sistem komunikasi gelombang mikro yang berfungsi untuk mengirimkan sinyal informasi melalui medium udara bebas dan harus bersifat LOS (Line of Sight). Pada penelitian ini menggunakan software Pathloss 5.0 untuk merancang dan menganalisis sistem komunikasi gelombang mikro yang optimal. Kemudian menggunakan teknik space diversity untuk perancangan, karena jalur propagasinya melewati lautan. Ketika menggunakan teknik space diversity rentang antenna TR-DR dipisahkan menjadi 100 λ, 150 λ, dan 200 λ. Dari penelitian ini diperoleh hasil availability yang optimal yaitu menggunakan teknik space diversity pada rentang antenna TR-DR 100 λ dengan analisis manual sebesar 99,9928982 % dan dengan simulasi Pathloss 5.0 sebesar 99,9914724 %. Nilai tersebut sudah sesuai dengan standar ITU-R G.827 dan F.1703 untuk rancangan sistem komunikasi gelombang mikro short haul yang mana availability harus sebesar 99,9800 – 99,9966%.
+    </string>
+    <string name="pinjam">Pinjam</string>
+    <string name="cari_buku">Cari Buku</string>
+    <string name="title_borrow">Peminjaman</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="not_found_image">Not Found Image</string>
+    <string name="text_not_found">Daftar tidak ditemukan :( \nCari dengan nama yang benar yaa..</string>
+    <string name="temukan_referensi_terbaik">Temukan referensi terbaikmu :)</string>
+    <string name="kesukaan">Koleksi</string>
+    <string name="belum_tambah_ke_favorit">Kamu belum menambahkan referensi ke koleksi kamu yaa..</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="pengaturan_tambahan">Pengaturan Tambahan</string>
+    <string name="keluar">Keluar</string>
+    <string name="peminjaman">Peminjaman</string>
+    <string name="setuju">Setuju</string>
+    <string name="batalkan">Batalkan</string>
+    <string name="kamu_belum_meminjam_buku_apapun_yaa">Kamu belum meminjam buku apapun yaa..</string>
+</resources>

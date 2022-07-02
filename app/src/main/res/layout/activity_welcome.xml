@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.welcome.WelcomeActivity">
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="@dimen/range_0"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/range_32"
+      android:layout_marginTop="@dimen/range_64"
+      android:layout_marginEnd="@dimen/range_32"
+      android:fontFamily="@font/inter_semibold"
+      android:gravity="center_horizontal|top"
+      android:text="@string/your_thesis_explore"
+      android:textSize="@dimen/size_24"
+      android:textColor="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="@dimen/range_0"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/range_64"
+      android:layout_marginEnd="@dimen/range_64"
+      android:fontFamily="@font/inter"
+      android:gravity="center_horizontal|top"
+      android:text="@string/find_your_best_references"
+      android:textSize="@dimen/size_18"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="@dimen/range_0"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/range_12"
+      android:layout_marginTop= "@dimen/range_64"
+      android:layout_marginEnd="@dimen/range_12"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView2"
+      app:srcCompat="@drawable/welcome"
+      android:contentDescription="@string/welcome_image" />
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/btn_login"
+      style="@style/ButtonStyle16"
+      android:layout_width="@dimen/range_0"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/range_16"
+      android:layout_marginTop="@dimen/range_64"
+      android:layout_marginEnd="@dimen/range_16"
+      android:text="@string/masuk"
+      android:textColor="#000000"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/btn_register"
+      android:layout_width="@dimen/range_0"
+      style="@style/ButtonStyle16.White"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/range_16"
+      android:layout_marginTop="@dimen/range_12"
+      android:layout_marginEnd="@dimen/range_16"
+      android:text="@string/daftar"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
