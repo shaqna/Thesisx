@@ -7,6 +7,7 @@ object Helper {
         val number = (1000..9999).random()
         val key = number.toString()
         Log.d("MyKEY", number.toString())
+
         return key
     }
 }
