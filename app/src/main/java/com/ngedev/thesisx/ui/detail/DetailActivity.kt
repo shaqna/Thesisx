@@ -3,7 +3,6 @@ package com.ngedev.thesisx.ui.detail
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.core.view.isVisible
 import com.google.android.material.snackbar.Snackbar
 import com.ngedev.thesisx.R
@@ -14,6 +13,7 @@ import com.ngedev.thesisx.domain.model.Thesis
 import com.ngedev.thesisx.domain.model.UserAccount
 import com.ngedev.thesisx.ui.locker.LockerActivity
 import com.ngedev.thesisx.utils.ExtraName
+import com.ngedev.thesisx.utils.Helper
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.koin.core.context.loadKoinModules
 
@@ -21,13 +21,6 @@ class DetailActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailBinding
     private val viewModel: DetailViewModel by viewModel()
-    private var key: String
-
-    init {
-        val number = (1000..9999).random()
-        key = number.toString()
-        Log.d("MyKEY", number.toString())
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -174,7 +167,7 @@ class DetailActivity : AppCompatActivity() {
             is Resource.Loading -> loadingState(true)
             is Resource.Success -> {
                 loadingState(false)
-                viewModel.updateKey(key).observe(this@DetailActivity, ::onUpdateKeyResponse)
+                viewModel.updateKey(Helper.generateRandomKey()).observe(this@DetailActivity, ::onUpdateKeyResponse)
             }
             is Resource.Error -> {
                 loadingState(false)
