@@ -27,7 +27,7 @@ jobs:
     - name: Run Tests
       run: ./gradlew lint test
     - name: Download a Build Artifact
-    - uses: actions/download-artifact@v3.0.0
+      uses: actions/download-artifact@v3.0.0
       with:
         # Destination path
         path: app/build/outputs/apk/debug/
