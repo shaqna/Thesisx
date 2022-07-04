@@ -30,4 +30,5 @@ jobs:
       uses: actions/download-artifact@v3.0.0
       with:
         # Destination path
+        name: thesis-apk
         path: app/build/outputs/apk/debug/
