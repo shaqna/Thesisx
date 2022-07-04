@@ -43,10 +43,6 @@ class DetailViewModel(private val useCase: DetailUseCase): ViewModel() {
         return useCase.deleteFavoriteThesis(id).asLiveData()
     }
 
-    fun deleteBorrowingThesis(id: String): LiveData<Resource<Unit>> {
-        return useCase.deleteBorrowingThesis(id).asLiveData()
-    }
-
     fun getCurrentUser(): LiveData<Resource<UserAccount>> {
         return useCase.getCurrentUser().asLiveData()
     }

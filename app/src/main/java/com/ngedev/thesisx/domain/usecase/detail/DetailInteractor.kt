@@ -19,10 +19,6 @@ class DetailInteractor(
         return thesisRepository.addBorrowingThesis(id)
     }
 
-    override fun deleteBorrowingThesis(id: String): Flow<Resource<Unit>> {
-        return thesisRepository.deleteBorrowingThesis(id)
-    }
-
     override fun addFavoriteThesis(id: String): Flow<Resource<Unit>> {
         return thesisRepository.addFavoriteThesis(id)
     }

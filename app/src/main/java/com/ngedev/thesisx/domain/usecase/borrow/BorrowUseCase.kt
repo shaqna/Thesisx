@@ -10,4 +10,5 @@ interface BorrowUseCase {
     fun getAllBorrowing(borrowingIds: List<String>): Flow<Resource<List<Thesis>>>
 
     fun getCurrentUser(): Flow<Resource<UserAccount>>
+
 }

@@ -8,7 +8,6 @@ import kotlinx.coroutines.flow.Flow
 interface DetailUseCase {
     fun getThesisById(id: String): Flow<Resource<Thesis>>
     fun addBorrowingThesis(id: String): Flow<Resource<Unit>>
-    fun deleteBorrowingThesis(id: String): Flow<Resource<Unit>>
     fun addFavoriteThesis(id: String): Flow<Resource<Unit>>
     fun deleteFavoriteThesis(id: String): Flow<Resource<Unit>>
     fun getCurrentUser(): Flow<Resource<UserAccount>>

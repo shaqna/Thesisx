@@ -42,4 +42,9 @@
     <string name="setuju">Setuju</string>
     <string name="batalkan">Batalkan</string>
     <string name="kamu_belum_meminjam_buku_apapun_yaa">Kamu belum meminjam buku apapun yaa..</string>
+    <string name="keluar_dari_aplikasi">Keluar dari aplikasi</string>
+    <string name="logout_question">Apakah kamu yakin akan keluar dari aplikasi?</string>
+    <string name="selesai">Selesai</string>
+    <string name="loan_dialog_title">Pinjaman Selesai</string>
+    <string name="loan_description">Apakah pinjamanmu sudah selesai?</string>
 </resources>

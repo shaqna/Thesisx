@@ -1,11 +1,8 @@
 package com.ngedev.thesisx.data.source.remote.service
 
-import com.google.firebase.ktx.Firebase
 import com.ngedev.thesisx.domain.model.UserAccount
 import com.ngedev.thesisx.data.source.remote.network.FirebaseResponse
-import com.ngedev.thesisx.data.source.remote.response.ThesisResponse
 import com.ngedev.thesisx.data.source.remote.response.UserAccountResponse
-import com.ngedev.thesisx.domain.model.Thesis
 import com.ngedev.thesisx.utils.FirebaseConstant
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.emitAll

@@ -1,6 +1,5 @@
 package com.ngedev.thesisx.ui.borrow
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,12 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ngedev.thesisx.R
 import com.ngedev.thesisx.databinding.FragmentBorrowBinding
 import com.ngedev.thesisx.domain.Resource
 import com.ngedev.thesisx.domain.di.borrowModule
 import com.ngedev.thesisx.domain.model.Thesis
-import com.ngedev.thesisx.ui.home.ThesisAdapter
+import com.ngedev.thesisx.ui.loanDetail.LoanThesisAdapter
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.koin.core.context.loadKoinModules
 
@@ -28,7 +26,7 @@ class BorrowFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         loadKoinModules(borrowModule)
-        _binding = FragmentBorrowBinding.inflate(inflater, container, false )
+        _binding = FragmentBorrowBinding.inflate(inflater, container, false)
 
         return binding?.root
     }
@@ -39,8 +37,8 @@ class BorrowFragment : Fragment() {
         viewModel.currentUser().observe(viewLifecycleOwner) { user ->
             user.data?.borrowing.let { borrowingList ->
 
-                if(borrowingList!=null) {
-                    if(borrowingList.isNotEmpty()) {
+                if (borrowingList != null) {
+                    if (borrowingList.isNotEmpty()) {
                         setLayoutConditionWhenEmpty(false)
                         viewModel.getAllUserThesisBorrow(borrowingList)
                             .observe(viewLifecycleOwner, ::setBorrowing)
@@ -48,7 +46,6 @@ class BorrowFragment : Fragment() {
                         setLayoutConditionWhenEmpty(true)
                     }
                 }
-
 
 
             }
@@ -64,7 +61,7 @@ class BorrowFragment : Fragment() {
         when (resource) {
             is Resource.Success -> {
                 loadingState(state = false)
-                val adapter = ThesisAdapter(requireContext())
+                val adapter = LoanThesisAdapter(requireContext())
                 resource.data?.let { theses ->
                     adapter.setItems(theses)
                     binding?.rvThesis?.adapter = adapter

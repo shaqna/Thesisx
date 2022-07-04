@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Thesisx">
         <activity
+            android:name=".ui.loanDetail.LoanDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.locker.LockerActivity"
             android:exported="false" />
         <activity

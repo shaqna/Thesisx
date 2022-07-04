@@ -167,7 +167,8 @@ class DetailActivity : AppCompatActivity() {
             is Resource.Loading -> loadingState(true)
             is Resource.Success -> {
                 loadingState(false)
-                viewModel.updateKey(Helper.generateRandomKey()).observe(this@DetailActivity, ::onUpdateKeyResponse)
+                viewModel.updateKey(Helper.generateRandomKey())
+                    .observe(this@DetailActivity, ::onUpdateKeyResponse)
             }
             is Resource.Error -> {
                 loadingState(false)
@@ -256,7 +257,7 @@ class DetailActivity : AppCompatActivity() {
     }
 
     private fun stateBorrowed(state: Boolean) {
-        if(state) {
+        if (state) {
             binding.btnBorrow.isEnabled = !state
             binding.btnBorrow.text = "Dipinjam"
         } else {
