@@ -39,8 +39,8 @@ class DetailActivity : AppCompatActivity() {
 
         if (thesisId != null) {
             viewModel.getThesisById(thesisId).observe(this@DetailActivity, ::setDetailThesis)
-            viewModel.getCurrentUser().observe(this@DetailActivity) { resource ->
-                setStateInCurrentUser(resource, thesisId)
+            viewModel.getCurrentUser().observe(this@DetailActivity) {
+                setStateInCurrentUser(it, thesisId)
             }
         }
     }
