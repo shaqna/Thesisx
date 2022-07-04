@@ -5,7 +5,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ngedev.thesisx.R
 import com.ngedev.thesisx.databinding.ItemCategoryRowBinding
-import com.ngedev.thesisx.utils.Category
 
 class CategoryAdapter(private val listCategory: List<String>) :
     RecyclerView.Adapter<CategoryAdapter.HomeViewHolder>() {
