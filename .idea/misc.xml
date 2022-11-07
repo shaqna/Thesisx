@@ -3,18 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable-v24/ic_add_image_cover.xml" value="0.1375" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/arrow_back_icon.xml" value="0.134" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/background_profile_text.xml" value="0.1375" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/divider_line.xml" value="0.1" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/empty_borrowed.xml" value="0.1055" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/empty_borrowing.xml" value="0.1945" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/empty_favorite.xml" value="0.2165" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/empty_search.xml" value="0.1445" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/ic_add_image_cover.xml" value="0.1375" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/ic_menu.xml" value="0.138" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/ic_username.xml" value="0.1475" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/icon_elektronika.xml" value="0.1" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/icon_kontrol.xml" value="0.1" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/icon_power.xml" value="0.1" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/icon_telekomunikasi.xml" value="0.134" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/item_background.xml" value="0.138" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/item_category_selected.xml" value="0.134" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/item_category_unselected.xml" value="0.134" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/log_out.xml" value="0.1485" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/mail.xml" value="0.1475" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/rounded_button.xml" value="0.161" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/rounded_button_with_stroke.xml" value="0.1135" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/rounded_image_book.xml" value="0.134" />
@@ -23,22 +31,30 @@
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/drawable/welcome.xml" value="0.1" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/font/inter.xml" value="0.19666524155622062" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/font/inter_semibold.xml" value="0.19666524155622062" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout-v26/activity_detail_form.xml" value="0.209375" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_about.xml" value="0.25" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_additional_settings.xml" value="0.25" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_auth.xml" value="0.1718683197947841" />
-        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_detail.xml" value="0.2" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_detail.xml" value="0.22" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_detail_form.xml" value="0.33" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_edit_username.xml" value="0.25" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_loan_detail.xml" value="0.1718683197947841" />
-        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_locker.xml" value="0.15904232578024796" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_loan_thesis_form.xml" value="0.18" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_locker.xml" value="0.22" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_main.xml" value="0.209375" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_reset_password.xml" value="0.25" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_splash.xml" value="0.22" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_splash_screen.xml" value="0.209375" />
-        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_welcome.xml" value="0.22" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/activity_welcome.xml" value="0.1718683197947841" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/dialog_layout.xml" value="0.33" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/fragment_bookmark.xml" value="0.1718683197947841" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/fragment_borrow.xml" value="0.1" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/fragment_home.xml" value="0.33" />
-        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/fragment_loan_form.xml" value="0.16" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/fragment_login.xml" value="0.2" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/fragment_notifications.xml" value="0.1718683197947841" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/fragment_register.xml" value="0.16" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/fragment_search.xml" value="0.25" />
@@ -46,8 +62,10 @@
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/item_book.xml" value="0.33" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/item_category.xml" value="0.33" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/item_category_row.xml" value="0.67" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/item_loan.xml" value="0.33" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/layout/tes.xml" value="0.1718683197947841" />
         <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1718683197947841" />
+        <entry key="..\:/Users/NB-LENOVO/AndroidStudioProjects/Thesisx/app/src/main/res/menu/loan_menu.xml" value="0.18127404873877725" />
       </map>
     </option>
   </component>

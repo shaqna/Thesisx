@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.form.LoanFormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/range_24"
+        android:paddingEnd="@dimen/range_24"
+        android:paddingBottom="@dimen/range_64">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/range_16"
+                android:background="@android:color/transparent"
+                android:contentDescription="back"
+                android:padding="@dimen/range_8"
+                android:src="@drawable/arrow_back_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_title_form"
+                style="@style/InterSemiBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_loan_form"
+                android:textSize="@dimen/size_16"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_back" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_loan_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/range_0"
+            android:layout_marginTop="@dimen/range_28"
+            android:layout_marginEnd="@dimen/range_0"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/gray"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/primaryColor"
+            app:hintTextColor="@color/primaryColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="@string/hint_loan_name"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_loan_npm"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/range_0"
+            android:layout_marginTop="@dimen/range_16"
+            android:layout_marginEnd="@dimen/range_0"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/gray"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/primaryColor"
+            app:hintTextColor="@color/primaryColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="@string/hint_loan_npm"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_loan_phone_number"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/range_0"
+            android:layout_marginTop="@dimen/range_16"
+            android:layout_marginEnd="@dimen/range_0"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/gray"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/primaryColor"
+            app:hintTextColor="@color/primaryColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="@string/hint_loan_phone_number"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_loan_date"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/range_0"
+            android:layout_marginTop="@dimen/range_16"
+            android:layout_marginEnd="@dimen/range_0"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="@string/hint_date"
+            android:textColorHint="@color/gray"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/primaryColor"
+            app:endIconDrawable="@drawable/ic_date"
+            app:endIconMode="custom"
+            app:endIconTint="@color/primaryColor"
+            app:hintTextColor="@color/primaryColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tie_loan_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/transparent"
+                android:inputType="date"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_loan_note"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginStart="@dimen/range_0"
+            android:layout_marginTop="@dimen/range_16"
+            android:layout_marginEnd="@dimen/range_0"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/gray"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/primaryColor"
+            app:hintTextColor="@color/primaryColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/transparent"
+                android:gravity="top"
+                android:hint="@string/hint_note"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/range_16"
+            android:background="@drawable/background_profile_text"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/range_12"
+                android:layout_marginTop="@dimen/range_12"
+                android:fontFamily="@font/inter_semibold"
+                android:text="@string/text_masukan_foto_ktm"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/range_12"
+                android:layout_marginTop="@dimen/range_12"
+                android:layout_marginEnd="@dimen/range_22"
+                android:fontFamily="@font/inter"
+                android:text="@string/text_subtitle_foto_ktm"
+                android:textColor="@color/darkGrey" />
+
+            <ImageView
+                android:id="@+id/iv_add_cover"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="24dp"
+                android:contentDescription="tambahkan foto"
+                android:src="@drawable/ic_add_image_cover" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_upload_form"
+            style="@style/ButtonStyle16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/range_24"
+            android:text="@string/pinjam" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/ProgressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/range_8"
+            android:indeterminateTint="@color/primaryColor"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

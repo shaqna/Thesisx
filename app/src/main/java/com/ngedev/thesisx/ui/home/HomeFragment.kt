@@ -26,6 +26,7 @@ class HomeFragment : Fragment() {
     private val viewModel: HomeViewModel by viewModel()
     private lateinit var thesisAdapter: ThesisAdapter
 
+
     private val listCategories = arrayListOf(
         Category.ALL,
         Category.CONTROL,

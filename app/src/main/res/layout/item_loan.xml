@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/range_16"
+    android:background="@drawable/item_background">
+
+    <ImageView
+        android:id="@+id/iv_poster"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="@dimen/range_16"
+        android:layout_marginTop="@dimen/range_16"
+        android:layout_marginBottom="@dimen/range_16"
+        android:contentDescription="category"
+        android:src="@drawable/icon_telekomunikasi"
+        android:background="@drawable/rounded_image_book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/range_12"
+        android:layout_marginEnd="@dimen/range_12"
+        android:background="@android:color/transparent"
+        android:contentDescription="menu"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_loan_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/range_10"
+        android:layout_marginTop="@dimen/range_10"
+        android:ellipsize="end"
+        android:fontFamily="@font/inter_medium"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btnMenu"
+        app:layout_constraintStart_toEndOf="@id/iv_poster"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="aaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaa aaaa" />
+
+    <TextView
+        android:id="@+id/tv_book_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/inter"
+        android:maxLines="1"
+        android:textColor="@color/darkGrey"
+        app:layout_constraintEnd_toStartOf="@+id/btnMenu"
+        app:layout_constraintStart_toStartOf="@id/tv_loan_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_loan_name"
+        tools:text="aaaaaaa aaaaaaaaa aa aaaaa aaaaaa " />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/range_8"
+        android:drawablePadding="@dimen/range_8"
+        android:fontFamily="@font/inter"
+        android:textColor="@color/darkGrey"
+        app:drawableStartCompat="@drawable/ic_date"
+        app:layout_constraintStart_toStartOf="@+id/tv_book_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_book_title"
+        tools:text="07 Juli 2021" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/range_32"
+        android:layout_marginTop="@dimen/range_16"
+        android:background="@color/strokeColor"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.locker.LockerActivity">
+    tools:context=".ui.cupboard.CupBoardActivity">
 
     <LinearLayout
         android:id="@+id/layout_key_locker"
@@ -27,7 +27,7 @@
             android:contentDescription="@string/not_found_image"/>
 
         <TextView
-            android:id="@+id/tvLockerCode"
+            android:id="@+id/tvLockerDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/InterMedium"
@@ -36,7 +36,20 @@
             android:textColor="@color/black"
             android:layout_marginHorizontal="@dimen/range_64"
             android:gravity="center"
-            android:text="@string/kamu_belum_meminjam_buku_apapun_yaa"/>
+            android:text="@string/ambil_di_loker_1_yaa"/>
+
+        <TextView
+            android:id="@+id/tvLockerCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/InterMedium"
+            android:layout_marginTop="@dimen/range_12"
+            android:textSize="@dimen/size_24"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="@dimen/range_64"
+            android:gravity="center"
+            tools:text="1234"/>
+
     </LinearLayout>
 
     <ProgressBar

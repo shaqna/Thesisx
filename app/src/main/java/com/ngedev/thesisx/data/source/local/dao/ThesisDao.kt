@@ -19,6 +19,7 @@ interface ThesisDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertListThesis(thesis: List<ThesisEntity>)
 
+
     @Query("SELECT * FROM thesis WHERE category = :category")
     fun selectAllThesisByCategory(category: String): Flow<List<ThesisEntity>>
 
@@ -26,17 +27,15 @@ interface ThesisDao {
     fun selectThesisById(id: String): Flow<ThesisEntity>
 
     @Query("SELECT * FROM thesis WHERE uid in (:ids) LIMIT 10")
-    fun selectAllFavorites(ids: List<String>):Flow<List<ThesisEntity>>
+    fun selectAllFavorites(ids: List<String>): Flow<List<ThesisEntity>>
 
-    @Query("SELECT * FROM thesis WHERE uid in (:ids) LIMIT 10")
-    fun selectAllBorrowing(ids: List<String>):Flow<List<ThesisEntity>>
-
-    @Query("SELECT * FROM thesis WHERE title LIKE '%'||:title||'%'")
+    @Query(
+        "SELECT * FROM thesis WHERE title LIKE '%'||:title||'%' OR author LIKE '%'||:title||'%' OR searchKeyword LIKE '%'||:title||'%'"
+    )
     fun searchThesis(title: String): Flow<List<ThesisEntity>>
 
     @Query("DELETE FROM thesis")
     suspend fun clearThesis()
-
 
 
 }

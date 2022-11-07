@@ -13,7 +13,7 @@
     </style>
 
     <style name="LayoutStyle">
-        <item name="android:background">@color/black</item>
+        <item name="android:background">@color/white</item>
         <item name="android:paddingTop">@dimen/range_16</item>
         <item name="android:paddingStart">@dimen/range_24</item>
         <item name="android:paddingEnd">@dimen/range_24</item>
@@ -21,6 +21,15 @@
 
     <style name="ButtonStyle16" parent="Widget.MaterialComponents.Button">
         <item name="cornerRadius">100dp</item>
+        <item name="backgroundColor">@color/primaryColor</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:paddingTop">@dimen/range_12</item>
+        <item name="android:paddingBottom">@dimen/range_12</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ButtonStyle16.NoCorner" parent="Widget.MaterialComponents.Button">
         <item name="backgroundColor">@color/primaryColor</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/size_16</item>

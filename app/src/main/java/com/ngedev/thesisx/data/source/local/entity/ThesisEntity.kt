@@ -6,12 +6,18 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "thesis")
 data class ThesisEntity(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = false)
     var uid: String = "",
     var title: String ="",
+
     var author: String = "",
+
     var year: Int = 0,
+
+    var searchKeyword: String = "",
+
     var category: String = "",
+
     var thesisAbstract: String = "",
     var borrowed: Boolean = false
 )

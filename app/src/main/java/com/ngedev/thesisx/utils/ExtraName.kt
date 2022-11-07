@@ -1,5 +1,9 @@
 package com.ngedev.thesisx.utils
 
 object ExtraName {
-    const val EXTRA_ID = "id"
+    const val ID = "id"
+    const val USERNAME = "username"
+    const val EMAIL = "email"
+    const val THESIS = "thesis"
+    const val FORM = "loan_form"
 }

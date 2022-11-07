@@ -2,22 +2,40 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ngedev.thesisx">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:name=".ThesisApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Thesisx">
         <activity
-            android:name=".ui.loanDetail.LoanDetailActivity"
+            android:name=".ui.detail.loan_detail.LoanDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.locker.LockerActivity"
+            android:name="com.ngedev.thesisx.ui.settings.EditUsernameActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.detail.DetailActivity"
+            android:name=".ui.auth.login.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ngedev.thesisx.ui.settings.AdditionalSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ngedev.thesisx.ui.settings.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ngedev.thesisx.ui.form.LoanFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.cupboard.CupBoardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.detail.thesis_detail.DetailActivity"
             android:exported="false" />
         <activity
             android:name=".ui.auth.AuthActivity"

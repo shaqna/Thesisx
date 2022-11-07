@@ -1,5 +1,6 @@
 package com.ngedev.thesisx.data.source.local.entity
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverter
@@ -8,12 +9,16 @@ import com.google.gson.reflect.TypeToken
 
 @Entity(tableName = "user")
 data class UserEntity(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = false)
     val uid: String,
+
     val username: String,
+
     val email: String,
+
     val favorite: List<String> = listOf(),
-    val borrowing: List<String> = listOf(),
+
+    val borrowing: List<String>? = listOf(),
 
 )
 

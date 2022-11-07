@@ -10,7 +10,7 @@ import androidx.fragment.app.commit
 import androidx.fragment.app.replace
 import com.google.android.material.snackbar.Snackbar
 import com.ngedev.thesisx.R
-import com.ngedev.thesisx.domain.model.UserAccount
+import com.ngedev.thesisx.domain.model.User
 import com.ngedev.thesisx.databinding.FragmentRegisterBinding
 import com.ngedev.thesisx.domain.Resource
 import com.ngedev.thesisx.domain.di.authModule
@@ -61,8 +61,8 @@ class RegisterFragment : Fragment() {
 
     }
 
-    private fun generateUserModel(email: String, username: String): UserAccount {
-        return UserAccount(
+    private fun generateUserModel(email: String, username: String): User {
+        return User(
             uid = "",
             username,
             email

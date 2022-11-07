@@ -7,6 +7,8 @@ object FirebaseConstant {
         const val USER_COLLECTION = "librarian"
         const val THESIS_COLLECTION = "Notebook"
         const val LOCKER_COLLECTION = "locker_password"
+        const val LOAN_COLLECTION = "loan_data"
+        const val LOAN_STORAGE = "loan_storage"
     }
 
     object Fields {
@@ -16,11 +18,13 @@ object FirebaseConstant {
         const val AUTHOR_FIELD = "author"
         const val YEAR_FIELD = "year"
         const val ID_FIELD = "id"
+        const val UID_FIELD = "uid"
         const val CATEGORY_FIELD = "category"
         const val FAVORITE_FIELD = "favorite"
         const val USERNAME_FIELD = "username"
         const val BORROWING_FIELD = "borrowing"
         const val PASSWORD_FIELD = "key"
+        const val KEYWORD_FIELD = "searchKeyword"
     }
 
     object Docs {

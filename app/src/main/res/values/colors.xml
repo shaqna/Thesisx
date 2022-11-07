@@ -4,7 +4,7 @@
     <color name="primaryLightColor">#ff6d86</color>
     <color name="primaryDarkColor">#c20030</color>
     <color name="black">#000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white">#FFFFFF</color>
     <color name="gray">#BDBDBD</color>
     <color name="fillColor">#F6F6F6</color>
     <color name="strokeColor">#E8E8E8</color>

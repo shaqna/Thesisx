@@ -9,7 +9,7 @@ import com.bumptech.glide.Glide
 import com.ngedev.thesisx.R
 import com.ngedev.thesisx.databinding.ItemBookBinding
 import com.ngedev.thesisx.domain.model.Thesis
-import com.ngedev.thesisx.ui.detail.DetailActivity
+import com.ngedev.thesisx.ui.detail.thesis_detail.DetailActivity
 import com.ngedev.thesisx.utils.Category
 import com.ngedev.thesisx.utils.ExtraName
 
@@ -21,6 +21,7 @@ class ThesisAdapter(private val context: Context) :
     fun setItems(items: List<Thesis>) {
         this.theses.clear()
         this.theses.addAll(items)
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ThesisViewHolder {
@@ -69,7 +70,7 @@ class ThesisAdapter(private val context: Context) :
             itemView.setOnClickListener {
                 context.startActivity(
                     Intent(itemView.context, DetailActivity::class.java).putExtra(
-                        ExtraName.EXTRA_ID, thesis.uid
+                        ExtraName.ID, thesis.uid
                     )
                 )
             }

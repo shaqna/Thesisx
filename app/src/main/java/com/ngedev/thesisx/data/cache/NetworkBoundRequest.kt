@@ -17,11 +17,7 @@ abstract class NetworkBoundRequest<RequestType> {
             }
             is FirebaseResponse.Error -> {
 
-                emit(Resource.Error(firebaseResponse.errorMessage))
-            }
-
-            is FirebaseResponse.Empty -> {
-                emit(Resource.Error("Empty"))
+                emit(Resource.Error<Unit>(firebaseResponse.errorMessage))
             }
         }
 

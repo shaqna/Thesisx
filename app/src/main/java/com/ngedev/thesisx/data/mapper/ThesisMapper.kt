@@ -8,10 +8,13 @@ import kotlinx.coroutines.flow.map
 
 
 fun ThesisEntity.toModel(): Thesis =
-    Thesis(uid, title, author, year, category, thesisAbstract, borrowed)
+    Thesis(uid, title, author, year, searchKeyword, category, thesisAbstract, borrowed)
 
 fun ThesisResponse.toEntity(): ThesisEntity =
-    ThesisEntity(uid, title, author, year, category, thesisAbstract, borrowed)
+    ThesisEntity(uid, title, author, year, searchKeyword, category, thesisAbstract, borrowed)
+
+fun ThesisResponse.toModel(): Thesis =
+    Thesis(uid, title, author, year, searchKeyword, category, thesisAbstract, borrowed)
 
 fun Flow<ThesisEntity>.toFlowModel(): Flow<Thesis> =
     this.map {
@@ -28,6 +31,10 @@ fun List<ThesisResponse>.toListEntity(): List<ThesisEntity> =
         it.toEntity()
     }
 
+fun List<ThesisResponse>.toModels(): List<Thesis> =
+    this.map {
+        it.toModel()
+    }
 
 fun Flow<List<ThesisEntity>>.toListFlowModel() =
     this.map {
