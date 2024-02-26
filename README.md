@@ -1,5 +1,5 @@
 # Thesis
-
+Thesisx is mobile application that show list of thesis especially at Electrical Enginerring campus library, Syiah Kuala University. This app can use for book searching purpose, loan, checking book before borrowing the book. This app will make student easy to get information of the thesis book before going to the library. 
 
 ## Software Development
 
