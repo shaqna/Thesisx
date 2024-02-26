@@ -8,17 +8,26 @@ Thesisx is mobile application that show list of thesis especially at Electrical 
 
 ## Software Development
 
-- Clean Architecture
-- Koin
-- Room Database
-- Circle CI
-- NetworkBoundResource
-- Coroutine Flow
-- MVVM
-- Firebase Service
-- Firebase Authentication
-- Firebase Firestore
-- SDLC Prototyping
+- Programming language
+  - Kotlin
+- Architecture pattern
+  - Clean Architecture
+- Dependency Injection
+  - Koin
+- Local database
+  - Room Database
+- Continuous integration
+  - Circle CI
+- Reactive programming
+  - Kotlin Flow
+- Design Pattern
+  - MVVM
+- Remote service and database
+  - Firebase Service
+  - Firebase Authentication
+  - Firebase Firestore
+- System development lifecycle
+  - SDLC Prototyping
 
 ## UI
 
